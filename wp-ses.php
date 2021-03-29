@@ -3,7 +3,7 @@
  * Plugin Name: Send emails through Amazon SES
  * Plugin URI: https://github.com/nationalarchives/ds-tna-wp-ses
  * Description: Sends WordPress emails through Amazon SES.
- * Version: 1.9
+ * Version: 1.0.0
  * Author: The National Archives
  * Author URI: https://github.com/nationalarchives
  * License: GPL2
