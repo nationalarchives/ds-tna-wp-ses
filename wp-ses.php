@@ -15,6 +15,8 @@
  * define( 'SMTP_SES_HOST', 'email-smtp.*.amazonaws.com' );
  * define( 'SMTP_SES_PORT', 587 );
  * define( 'SMTP_SES_SECURE', 'tls' );
+ * define( 'SMTP_SES_FROM_EMAIL', 'email@example.com' );
+ * define( 'SMTP_SES_FROM_NAME', 'The National Archives' );
  */
 
 // Amazon SES instead PHP mail.
@@ -28,5 +30,6 @@ function use_amazon_ses( $phpmailer ) {
         $phpmailer->Host = SMTP_SES_HOST;
         $phpmailer->Port = SMTP_SES_PORT;
         $phpmailer->SMTPSecure = SMTP_SES_SECURE;
+        $phpmailer->setFrom(SMTP_SES_FROM_EMAIL, SMTP_SES_FROM_NAME);
     }
 }
